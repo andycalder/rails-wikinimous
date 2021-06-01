@@ -1,0 +1,12 @@
+<h1>
+  <%= @article.title %>
+
+  <%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_article_path(@article) %>
+  <%= link_to '<i class="fas fa-trash"></i>'.html_safe, article_path(@article), method: :delete %>
+</h1>
+
+<p>
+  <%= @article.content %>
+</p>
+
+<i class="fas fa-trash"></i>
